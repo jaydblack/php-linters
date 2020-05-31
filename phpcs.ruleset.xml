@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ruleset name="Symfony Coding Standard">
+  <description>A custom coding standard for Symfony</description>
+
+  <config name="Symfony" value="./vendor/escapestudios/symfony2-coding-standard/Symfony"/>
+
+  <file>../src</file>
+  <file>../tests</file>
+
+  <rule ref="PSR2" />
+  <rule ref="Symfony">
+    <exclude name="Symfony.Commenting" />
+    <exclude name="Symfony.Functions.Arguments.Invalid" />
+  </rule>
+</ruleset>
